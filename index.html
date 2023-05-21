@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Bookstore</h1>
+
+    <div id="loginForm">
+      <h2>Login</h2>
+      <form onsubmit="return login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <input type="submit" class="button" value="Login">
+      </form>
+
+      <p id="loginMessage"></p>
+
+      <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register</a></p>
+    </div>
+
+    <div id="menuItems">
+      <h2>Menu</h2>
+      <div class="menu">
+        <a href="#">Gift Card</a>
+        <a href="#">Special Offer</a>
+        <a href="#">New Books</a>
+        <a href="#">Kidz Zone</a>
+        <a href="#">Shopping Cart</a>
+        <a href="#">Payment Corner</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
